@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -18,6 +18,27 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bgDark {
+  background: rgb(0, 30, 25);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 30, 25, 1) 0%,
+    rgba(15, 0, 40, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 30, 25, 1) 0%,
+    rgba(15, 0, 40, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 30, 25, 1) 0%,
+    rgba(15, 0, 40, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001e19",endColorstr="#0f0028",GradientType=1);
+  border: 1px solid rgb(0, 56, 80);
 }
 
 @layer utilities {
