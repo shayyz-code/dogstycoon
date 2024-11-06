@@ -11,7 +11,7 @@ export default function PrimaryButton({
 }: TPrimaryButtonProps) {
   return (
     <button
-      className="w-full px-4 py-1 bg-white text-gray-600 text-center rounded-full hover:bg-gray-200 outline-none transition-all ease-out"
+      className="w-full px-3 py-2 bg-white text-gray-600 font-semibold text-center text-xs rounded-full hover:bg-gray-200 outline-none transition-all ease-out"
       onClick={handleOnClick}
     >
       {children}

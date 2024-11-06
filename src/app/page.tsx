@@ -4,7 +4,7 @@ import MainPanel from "@/components/Home/MainPanel";
 import AuthProvider from "@/context/ContextAuth";
 import UserDataProvider from "@/context/ContextUserData";
 
-export default function Home() {
+export default function PageHome() {
   return (
     <>
       <AuthProvider>

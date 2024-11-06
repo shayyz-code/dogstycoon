@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import { Roboto_Mono } from "next/font/google";
+import Script from "next/script";
 
 const robotoMono = Roboto_Mono({
   subsets: ["latin"],
@@ -44,10 +45,10 @@ export default function RootLayout({
       <body
         className={`${robotoMono.variable} font-mono antialiased h-screen w-screen overflow-hidden`}
       >
-        <script
+        <Script
           src="https://telegram.org/js/telegram-web-app.js"
-          async
-        ></script>
+          strategy="beforeInteractive"
+        />
         <div className="flex flex-col h-full w-full min-h-0 min-w-0">
           <main className="flex flex-col items-center gap-5 h-full p-5 overflow-y-scroll">
             {children}

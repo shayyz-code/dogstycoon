@@ -4,6 +4,8 @@ import IconWallet from "./icons/wallet";
 import IconWalletSolid from "./icons/walletsolid";
 import IconCurrencyDollar from "./icons/currencydollar";
 import IconCurrencyDollarSolid from "./icons/currencydollarsolid";
+import IconUsers from "./icons/users";
+import IconUsersSolid from "./icons/userssolid";
 
 const navlinks = [
   {
@@ -17,6 +19,12 @@ const navlinks = [
     name: "Earn",
     icon: IconCurrencyDollar,
     iconSolid: IconCurrencyDollarSolid,
+  },
+  {
+    href: "/frens",
+    name: "Frens",
+    icon: IconUsers,
+    iconSolid: IconUsersSolid,
   },
   {
     href: "/payout",
