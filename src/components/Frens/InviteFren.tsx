@@ -59,14 +59,24 @@ export default function InviteFren() {
           isDisabled
           isCentered
         />
-        <SecondaryButton
-          handleOnClick={handleOnCopy}
-          unsetChild={<IconClipboard />}
-          setChild={<IconClipboardSolid />}
-          btnStatus={btnStatusCopy}
-        >
-          Copy
-        </SecondaryButton>
+        <div className="flex gap-2">
+          <SecondaryButton
+            handleOnClick={handleOnCopy}
+            unsetChild={<IconClipboard />}
+            setChild={<IconClipboardSolid />}
+            btnStatus={btnStatusCopy}
+          >
+            Copy
+          </SecondaryButton>
+          <SecondaryButton
+            handleOnClick={handleOnCopy}
+            unsetChild={<IconClipboard />}
+            setChild={<IconClipboardSolid />}
+            btnStatus={btnStatusCopy}
+          >
+            Share
+          </SecondaryButton>
+        </div>
       </div>
     </section>
   );

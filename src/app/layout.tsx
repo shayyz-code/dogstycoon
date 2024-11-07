@@ -42,13 +42,15 @@ export default function RootLayout({
           sizes="<generated>"
         />
       </Head>
-      <body
-        className={`${robotoMono.variable} font-mono antialiased h-screen w-screen overflow-hidden`}
-      >
+      <head>
         <Script
           src="https://telegram.org/js/telegram-web-app.js"
           strategy="beforeInteractive"
         />
+      </head>
+      <body
+        className={`${robotoMono.variable} font-mono antialiased h-screen w-screen overflow-hidden`}
+      >
         <div className="flex flex-col h-full w-full min-h-0 min-w-0">
           <main className="flex flex-col items-center gap-5 h-full p-5 overflow-y-scroll">
             {children}
