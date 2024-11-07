@@ -34,7 +34,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
   }, [initData, userCredentials]);
   return (
     <ContextAuth.Provider value={{ userCredentials }}>
-      {children}
+      {initData[0] && children}
     </ContextAuth.Provider>
   );
 }
